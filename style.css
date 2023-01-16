@@ -52,7 +52,8 @@ body *{
 
 
 #container{
-width: 360px;
+width: 100%;
+max-width: 588px;
 margin: 56px auto 0px;
 padding: 0 24px;
 }
@@ -187,7 +188,7 @@ footer{
 }
 
 .imag:hover{
-animation: pulse 1.5s ;
+animation: pulse 1.5s infinite ;
 border-radius: 50%;
 }
 

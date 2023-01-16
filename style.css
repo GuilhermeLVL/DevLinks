@@ -103,6 +103,8 @@ padding: 0 24px;
   z-index: 1;
   left: 0;
   transform: translateY(-50%);
+
+  animation: slide-back 0.4s ;
 }
 #switch span {
     display: block;
@@ -117,8 +119,7 @@ padding: 0 24px;
     border-radius: 9999px;
 }
 .light #switch button  {
-right: 0;
-left: initial;
+animation: slide-in 0.4s forwards;
 }
 /*Links*/
 ul{
@@ -228,6 +229,22 @@ border-radius: 50%;
     100%{
 transform: scale(0.9);
     }
+}
+
+@keyframes slide-in{
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+@keyframes slide-back {
+  from {
+   left: 50% ;  
+}to{
+left: 0;    
+}
 }
 
 @media (min-width:700px) {
